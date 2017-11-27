@@ -30,7 +30,7 @@ interval are then mapped to the mean value of the interval:
 u_{i, j} :=  \left ( \left \lfloor \frac{ u_{i,j} }{d} \right \rfloor + \frac{1}{2} \right ) * d
 ```
 
-![quantize]( http://latex.codecogs.com/gif.latex?u_%7Bi%2C%20j%7D%20%3A%3D%20%5Cleft%20%28%20%5Cleft%20%5Clfloor%20%5Cfrac%7B%20u_%7Bi%2Cj%7D%20%7D%7Bd%7D%20%5Cright%20%5Crfloor%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%20%5Cright%20%29%20*%20d)
+<!--![quantize]( http://latex.codecogs.com/gif.latex?u_%7Bi%2C%20j%7D%20%3A%3D%20%5Cleft%20%28%20%5Cleft%20%5Clfloor%20%5Cfrac%7B%20u_%7Bi%2Cj%7D%20%7D%7Bd%7D%20%5Cright%20%5Crfloor%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%20%5Cright%20%29%20*%20d)-->
 
 Where $` \lfloor . \rfloor `$ denotes the floor function, i.e. 
 $` \lfloor x \rfloor `$ gives the largest integer number that does not exceed
@@ -60,23 +60,25 @@ maximum value in the array, `np.min(img)` returns minimum value and
 `np.unique(img)` returns a list of unique values in the array.
 - `np.floor(img)` returns an array with _floored_ values.
 - After processing, return the image back to ` np.uint8 ` dtype.
- 
-## Problem 2 - Noise
 
-Integrate uniformly distributed noise \\( n_{i,j} \\) with zero mean and
-maximal deviation of \\( 0.5 \\) into the quantisation process:
+`[]() 
+
+## Problem 4 - Noise
+
+Integrate uniformly distributed noise $` n_{i,j} `$ with zero mean and
+maximal deviation of $` 0.5 `$ into the quantisation process:
 
 ![quant+noise](http://latex.codecogs.com/gif.latex?u_%7Bi%2C%20j%7D%20%3A%3D%20%5Cleft%20%28%20%5Cleft%20%5Clfloor%20%5Cfrac%7B%20u_%7Bi%2Cj%7D%20%7D%7Bd%7D%20&plus;%20n_%7Bi%2Cj%7D%20%5Cright%20%5Crfloor%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%20%5Cright%20%29%20*%20d)
 
 #### Your task:
 
 - Perform the quantisation with the added noise, according to the formula
-above. Use the same image and quantisation values as in Problem 1.
+above. Use the same image and quantisation values as in Problem 3.
 - Save the images as
 `.bmp` files with the filename format ` boats_qn.bmp `,  where ` q ` is the
-numeric value of \\( q \\) used for that image.  
+numeric value of $` q `$ used for that image.  
 - Comment the visual quality of quantised images with noise compared to
-quantised images in Problem 1, for all the values of \\( q \\).
+quantised images in Problem 3, for all the values of $` q `$.
 
 ##### Hint:
 
