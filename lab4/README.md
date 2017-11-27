@@ -86,3 +86,7 @@ quantised images in Problem 3, for all the values of $` q `$.
 function (`shape` is the shape of resulting array). 
 See [Numpy
 documentation](http://docs.scipy.org/doc/numpy/reference/routines.random.html).
+
+# Report
+
+Add your report here. Details about Markdown syntax can be found on the [link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
