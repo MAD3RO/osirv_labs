@@ -47,6 +47,9 @@ numeric value of $` q `$ used for that image.
 - Comment the visual quality of quantised images compared to original image, for
 all  values of  $` q `$.
 
+[]()
+
+
 ##### Hints:
 
 If ` img ` is numpy array containing your image: 
@@ -61,14 +64,15 @@ maximum value in the array, `np.min(img)` returns minimum value and
 - `np.floor(img)` returns an array with _floored_ values.
 - After processing, return the image back to ` np.uint8 ` dtype.
 
-`[]() 
 
 ## Problem 4 - Noise
 
 Integrate uniformly distributed noise $` n_{i,j} `$ with zero mean and
 maximal deviation of $` 0.5 `$ into the quantisation process:
 
-![quant+noise](http://latex.codecogs.com/gif.latex?u_%7Bi%2C%20j%7D%20%3A%3D%20%5Cleft%20%28%20%5Cleft%20%5Clfloor%20%5Cfrac%7B%20u_%7Bi%2Cj%7D%20%7D%7Bd%7D%20&plus;%20n_%7Bi%2Cj%7D%20%5Cright%20%5Crfloor%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%20%5Cright%20%29%20*%20d)
+```math
+u_{i, j} :=  \left ( \left \lfloor \frac{ u_{i,j} }{d} + n_{i,j} \right \rfloor + \frac{1}{2} \right ) * d
+```
 
 #### Your task:
 
